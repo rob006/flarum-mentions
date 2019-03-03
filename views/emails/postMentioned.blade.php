@@ -1,6 +1,6 @@
-Hey {!! $user->username !!}!
+Witaj {!! $user->username !!}!
 
-{!! $blueprint->reply->user->username !!} replied to your post (#{!! $blueprint->post->number !!}) in {!! $blueprint->post->discussion->title !!}.
+{!! $blueprint->reply->user->username !!} odpowiedział(a) na Twój post (#{!! $blueprint->post->number !!}) w {!! $blueprint->post->discussion->title !!}.
 
 {!! app()->url() !!}/d/{!! $blueprint->reply->discussion_id !!}/{!! $blueprint->reply->number !!}
 
